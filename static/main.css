@@ -1,0 +1,13 @@
+body{   
+    overflow: hidden;
+    background-color: #e9ecef;
+}
+.label{
+    font-size: 20px;
+}
+button{
+    transition: 4s ease-in-out;
+}
+button:hover{
+    color: darkslategray;
+}
