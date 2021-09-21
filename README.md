@@ -1,3 +1,6 @@
+# How to add accounts?
+Make the txt file in the Accounts folder. Thats it lol
+
 # Py Gen
 A website gen based on python, html and javascript. The backend of the site is made entirely with python, this makes it so that the database is not made public making it secure.
 
