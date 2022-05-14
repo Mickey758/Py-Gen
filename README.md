@@ -6,7 +6,7 @@ A website gen based on python, html and javascript. The backend of the site is m
 
 # Note
 People can abuse this system by using proxies or clearing their session everytime they gen to bypass the cooldown. To fix this, you could make a login system or add recaptcha to the site. If you need help, message me on discord:
-- Name: MickeyYe#0003
+- Name: MickeyYe#9423
 - UserID: 351838870104440852
 
 # Features
