@@ -5,19 +5,19 @@ Make the txt file in the Accounts folder. Thats it lol
 A website gen based on python, html and javascript. The backend of the site is made entirely with python, this makes it so that the database is not made public making it secure.
 
 # Note
-People can abuse this system by using proxies or clearing their session everytime they gen to bypass the cooldown. To fix this, you could make a login system or add recaptcha to the site. If you need help, message me on discord:
+People can abuse this system by using proxies. To fix this, you could make a login system or add recaptcha to the site. If you need help, message me on discord:
 - Name: MickeyYe#9423
 - UserID: 351838870104440852
 
 # Features
 - Rate limiting (Gen Cooldown)
-- Nice gui
+- Nice interface
 - Easy to add stock
 - Account removes from stock after generating
 - Made in python
 - Comments in code to be easier to understand
 
-# Requirements
+# Install Requirements
 ```
 pip install -r requirements.txt
 ```

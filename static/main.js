@@ -14,7 +14,7 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function genaccount(){
+$('#genbtn').click(function(){
     var name = document.getElementById("gen").value;
     var genbtn = document.getElementById("genbtn");
     if (name === "disabled"){
@@ -24,14 +24,14 @@ function genaccount(){
             text: 'Select a gen from the dropdown menu'
         })
     }
-    else{
+    else {
         r = new XMLHttpRequest();
         r.open("GET","/gen?name="+name,"True")
         r.send();
         r.onload = function (){
             if (r.status === 200){
                 Swal.fire({
-                    title:"Account Info",
+                    title:"Succesfully Generated Account",
                     icon:"success",
                     confirmButtonColor:"#4f4f4f",
                     text:r.response
@@ -51,7 +51,7 @@ function genaccount(){
                     text: 'That gen type does not exist'
                 })
             }
-            else if (r.status === 429 || r.response === "Generating too fast"){
+            else if (r.status === 429){
                 Toast.fire({
                     icon: 'error',
                     text: 'Wait at least 5 seconds before generating another account!'
@@ -65,7 +65,7 @@ function genaccount(){
             }
         }
     }
-}
+})
 $(document).ready(function() { 
     var genbtn = document.getElementById("genbtn");
     var info = document.getElementById("gen");

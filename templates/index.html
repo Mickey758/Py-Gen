@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="static/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="static/main.js"></script>
+    <script src="static/main.js" defer></script>
     <title>Py Gen</title>
 </head>
 <body>
@@ -16,15 +16,17 @@
         <div class="jumbotron text-center">
             <noscript>Enable javascript to continue!</noscript>
             <h2 class="display-4">Py Gen</h2>
-            <form class="text-left" onsubmit="return false">
+            <form class="text-left">
                 <div class="form-group">
                     <label for="gen">Account Type:</label>
                     <select class="form-control" id="gen">
                         <option value="disabled" selected>Select A Gen</option>
-                        {{gens}}
+                        {% for gen in gens %}
+                        <option value="{{gen}}">{{gen.title()}}</option>
+                        {% endfor %}
                     </select>
                 </div>
-                <button class="btn btn-dark btn-lg" id="genbtn" onclick="genaccount()">Generate</button>
+                <button class="btn btn-dark btn-lg" id="genbtn" type="button">Generate</button>
             </form>
         </div>
     </div>
